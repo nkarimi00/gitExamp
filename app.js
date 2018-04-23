@@ -22,7 +22,7 @@ application.use('/apiv3', require('./routes/apiv3'));
         respons.json("Hacker, go away");  
     });
 
-const port = 8080
+const port = process.env.PORT;
 application.listen (8080, () => {
 console.log('The magic happens at port ' + port)
 });
