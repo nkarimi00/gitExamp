@@ -23,6 +23,6 @@ application.use('/apiv3', require('./routes/apiv3'));
     });
 
 const port = 8080
-application.listen (port, () => {
+application.listen (8080, () => {
 console.log('The magic happens at port ' + port)
 });
